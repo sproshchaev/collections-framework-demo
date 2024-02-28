@@ -30,15 +30,13 @@ public class InsideMap {
         }
         table.setAccessible(false);
         if (obj != null) {
-            System.out.println("  Число bucket-ов (array size)=" + obj.length);
+            System.out.println("  CAPACITY (array size)=" + obj.length);
             for (int i = 0; i < obj.length; i++) {
                 System.out.println("  bucket [" + i + "]: " + obj[i]);
             }
         } else {
             if (map.isEmpty()) {
-                System.out.println("  Мап-а пуста. Массив с бакетами не создан!");
-            } else {
-                System.out.println("  Массив с бакетами не был получен!");
+                System.out.println("  Map is empty!");
             }
         }
         System.out.println("---------------\n");
